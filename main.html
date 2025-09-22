@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Meta and styles; responsive viewport + theme color -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Interactive personal profile and resume for Xia Jie Ou - Software Engineer and Web Developer based in New York." />
+  <meta name="keywords" content="software engineer, web developer, full-stack, React, Python, JavaScript" />
+  <meta name="author" content="Xia Jie Ou" />
+  <meta name="theme-color" content="#2563eb" />
+  <title>Xia Jie Ou — Software Engineer & Web Developer</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+</head>
+<body id="top">
+  <!-- Accessible skip link for keyboard users -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Site header with brand, primary nav, and theme toggle -->
+  <header role="banner">
+    <div class="container">
+      <a href="#top" class="brand" aria-label="Xia Jie Ou - Home">Xia Jie Ou</a>
+      <nav role="navigation" aria-label="Primary navigation">
+        <!-- Primary navigation links to page sections -->
+        <ul>
+          <li><a href="#about" aria-describedby="about-desc">About</a></li>
+          <li><a href="#skills" aria-describedby="skills-desc">Skills</a></li>
+          <li><a href="#experience" aria-describedby="experience-desc">Experience</a></li>
+          <li><a href="#education" aria-describedby="education-desc">Education</a></li>
+          <li><a href="#projects" aria-describedby="projects-desc">Projects</a></li>
+          <li><a href="#contact" aria-describedby="contact-desc">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- Dark/Light mode toggle (persisted via localStorage in script.js) -->
+      <button id="theme-toggle" class="btn theme-toggle" type="button"
+              aria-label="Toggle dark mode" aria-pressed="false" title="Toggle theme">
+        🌙 <span class="sr-only">Toggle dark mode</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content" role="main" tabindex="-1">
+    <!-- Intro hero: name, role, and profile photo -->
+    <section id="hero" aria-labelledby="hero-title" role="banner">
+      <div class="container">
+        <h1 id="hero-title">Xia Jie Ou</h1>
+        <p role="doc-subtitle">Software Engineer • Web Developer</p>
+        <figure role="img" aria-labelledby="profile-caption">
+          <img
+            src="assets/avatar.webp"
+            alt="Profile photo of Xia Jie Ou"
+            loading="eager"
+            decoding="async"
+          />
+          <figcaption id="profile-caption">Based in New York, NY</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- About: brief summary -->
+    <section id="about" aria-labelledby="about-title" role="region">
+      <div class="container">
+        <h2 id="about-title">About Me</h2>
+        <span id="about-desc" class="sr-only">Learn about my background and expertise</span>
+        <article role="article">
+          <p>
+            Software engineer focused on building reliable, accessible, and performant web applications.
+            Comfortable across the stack with modern web technologies, data pipelines, and pragmatic tooling.
+            Passionate about creating inclusive digital experiences that make a positive impact.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Technical Skills: compact definition list for uniform layout -->
+    <section id="skills" aria-labelledby="skills-title" role="region">
+      <div class="container">
+        <h2 id="skills-title">Technical Skills</h2>
+        <span id="skills-desc" class="sr-only">Overview of programming languages, frameworks, and tools</span>
+
+        <dl class="skills-list" aria-describedby="skills-desc">
+          <dt>Languages:</dt>
+          <dd>Python, TypeScript, JavaScript, C/C++</dd>
+
+          <dt>Frameworks &amp; Tools:</dt>
+          <dd>Linux, Docker, Node.js, Express.js, React, Next.js, Flask, Django</dd>
+
+          <dt>Cloud/Databases:</dt>
+          <dd>AWS, Kubernetes, PostgreSQL, MySQL</dd>
+        </dl>
+      </div>
+    </section>
+
+    <!-- Professional Experience: entries with organization logos -->
+    <section id="experience" aria-labelledby="experience-title" role="region">
+      <div class="container">
+        <h2 id="experience-title">Professional Experience</h2>
+        <span id="experience-desc" class="sr-only">Work history and professional accomplishments</span>
+
+        <article aria-labelledby="exp-hpc-title" role="article">
+          <header class="exp-header">
+            <img
+              class="org-logo"
+              src="https://media.licdn.com/dms/image/v2/D4E0BAQEuRFl1JSDRmA/company-logo_100_100/B4EZfDi9dbHwAQ-/0/1751332411667?e=1761177600&v=beta&t=R_qg-mawNrspFUKoJW7cLT1l2jjPqZDYM7s3GrLoUdI"
+              alt="CUNY organization logo"
+              width="48"
+              height="48"
+              loading="lazy"
+              decoding="async"
+              referrerpolicy="no-referrer"
+            />
+            <div>
+              <h3 id="exp-hpc-title">Software Engineer Intern</h3>
+              <p><strong>CUNY High Performance Computing Center</strong></p>
+              <p>
+                <time datetime="2025-08">August 2025</time> – <time datetime="2025-09">Present</time> • New York, NY
+              </p>
+            </div>
+          </header>
+          <ul role="list">
+            <li>Built a Python web crawler data pipeline to unify research paper data from 10,000+ sources.</li>
+            <li>Designed and implemented PostgreSQL schema to optimize queries across diverse publications.</li>
+          </ul>
+        </article>
+
+        <article aria-labelledby="exp-evergreen-title">
+          <header class="exp-header">
+            <img
+              class="org-logo"
+              src="https://media.licdn.com/dms/image/v2/D4E0BAQGch6z7CG-kkA/company-logo_100_100/B4EZaSJ5aBHkAU-/0/1746208790523/evergreeninvestments_logo?e=1761177600&v=beta&t=5n4EW7HnHQiaaWrrY4nCsgzk1IqmxkIhm1d47E3Jya4"
+              alt="Evergreen Investment logo"
+              width="48"
+              height="48"
+              loading="lazy"
+              decoding="async"
+              referrerpolicy="no-referrer"
+            />
+            <div>
+              <h3 id="exp-evergreen-title">Software Engineer Intern</h3>
+              <p><strong>Evergreen Investment</strong></p>
+              <p>
+                <time datetime="2025-03">Mar 2025</time> – <time datetime="2025-05">May 2025</time> • New York, NY
+              </p>
+            </div>
+          </header>
+          <ul role="list">
+            <li>Built a full‑stack real estate app with React/Vite, Express/Node, PostgreSQL, and Nginx for 2,000+ users.</li>
+            <li>Developed Zoho check‑in/check‑out with Deluge, reducing manual time‑tracking by 30%.</li>
+            <li>Led a team of five interns; ran sprint planning and defined the tech stack to deliver milestones on time.</li>
+          </ul>
+        </article>
+
+        <article aria-labelledby="exp-citytutors-title">
+          <header class="exp-header">
+            <img
+              class="org-logo"
+              src="https://media.licdn.com/dms/image/v2/D4E0BAQGch6z7CG-kkA/company-logo_100_100/B4EZaSJ5aBHkAU-/0/1746208790523/evergreeninvestments_logo?e=1761177600&v=beta&t=5n4EW7HnHQiaaWrrY4nCsgzk1IqmxkIhm1d47E3Jya4"
+              alt="The City Tutors logo"
+              width="48"
+              height="48"
+              loading="lazy"
+              decoding="async"
+              referrerpolicy="no-referrer"
+            />
+            <div>
+              <h3 id="exp-citytutors-title">Software Engineer Intern</h3>
+              <p><strong>The City Tutors</strong></p>
+              <p>
+                <time datetime="2024-12">Dec 2024</time> – <time datetime="2025-03">Mar 2025</time> • New York, NY
+              </p>
+            </div>
+          </header>
+          <ul role="list">
+            <li>Enhanced Django search via query optimization, cutting response time by ~10%.</li>
+            <li>Boosted form completion 25% with responsive HTML/CSS/JS, validation, and jQuery widgets for 3,000+ users.</li>
+            <li>Raised code quality 40% by adding tests and adopting pre‑commit Black and CI for PRs.</li>
+          </ul>
+        </article>
+
+        <article aria-labelledby="exp-research-title">
+          <header class="exp-header">
+            <img
+              class="org-logo"
+              src="https://media.licdn.com/dms/image/v2/D4E0BAQEuRFl1JSDRmA/company-logo_100_100/B4EZfDi9dbHwAQ-/0/1751332411667?e=1761177600&v=beta&t=R_qg-mawNrspFUKoJW7cLT1l2jjPqZDYM7s3GrLoUdI"
+              alt="CUNY organization logo"
+              width="48"
+              height="48"
+              loading="lazy"
+              decoding="async"
+              referrerpolicy="no-referrer"
+            />
+            <div>
+              <h3 id="exp-research-title">Undergraduate Researcher</h3>
+              <p><strong>CUNY Research Scholar Program</strong></p>
+              <p>
+                <time datetime="2024-10">Oct 2024</time> – <time datetime="2025-07">Jul 2025</time> • New York, NY
+              </p>
+            </div>
+          </header>
+          <ul role="list">
+            <li>Built a non‑contact Python app (OpenCV/NumPy) with live BPM overlays, CSV export, and UDP telemetry.</li>
+            <li>Achieved ±3–5 BPM real‑time accuracy via Hamming‑FFT, physio‑aware peaks, and EMA.</li>
+            <li>Improved robustness to lighting/motion by 3‑ROI quality‑weighted fusion and pixel/MAD filtering.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Education background -->
+    <section id="education" aria-labelledby="education-title" role="region">
+      <div class="container">
+        <h2 id="education-title">Education</h2>
+        <span id="education-desc" class="sr-only">Academic background and achievements</span>
+
+        <article aria-labelledby="edu-csi-title" role="article">
+          <h3 id="edu-csi-title">Bachelor of Science in Computer Science</h3>
+          <p><strong>CUNY College of Staten Island</strong></p>
+          <p>
+            <time datetime="2020-09">September 2020</time> – <time datetime="2027-05">May 2027</time> • New York, NY
+          </p>
+          <p>
+            <strong>Relevant Coursework:</strong> Data Structures, Algorithms, Modern Web Development, Web Database, Digital Systems, Supervised Machine Learning
+          </p>
+          <p>
+            <strong>Leadership & Affiliations:</strong> Google Summit, National Society of Black Engineers, ColorStack, CodePath, CS Club, CSTEP
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section id="projects" aria-labelledby="projects-title" role="region">
+      <div class="container">
+        <h2 id="projects-title">Featured Projects</h2>
+        <span id="projects-desc" class="sr-only">Portfolio of software development projects</span>
+
+        <article aria-labelledby="proj-aisupport-title">
+          <header>
+            <h3 id="proj-aisupport-title">AI-Support</h3>
+            <p>JavaScript, Node.js, React.js, Next.js, CI/CD, Llama AI API, Vercel</p>
+          </header>
+          <ul>
+            <li>Developed an AI support system with Next.js, React, and Llama API, achieving ~98% response accuracy.</li>
+            <li>Built an interactive agent with a custom RAG pipeline using OpenAI + Pinecone over a company KB (team of 4).</li>
+            <li>Optimized Node.js backend for faster responses and reliable real‑time data handling.</li>
+          </ul>
+          <p>
+           
+            <a href="https://github.com/penguince/ai-support" target="_blank" rel="noopener">Source Code</a>
+          </p>
+        </article>
+
+        <article aria-labelledby="proj-aiflashcard-title">
+          <header>
+            <h3 id="proj-aiflashcard-title">AI-FlashCard</h3>
+            <p>JavaScript, Node.js, React.js, Next.js, Firebase, Clerk, Stripe, OpenAI</p>
+          </header>
+          <ul>
+            <li>Implemented a SaaS that generates dynamic flashcards using OpenAI API.</li>
+            <li>Integrated paywall and custom pricing via Stripe; persisted data with Firebase.</li>
+          </ul>
+          <p>
+          
+            <a href="https://github.com/penguince/flashcard-saas" target="_blank" rel="noopener">Source Code</a>
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact: info + simple client-side validated form -->
+    <section id="contact" aria-labelledby="contact-title" role="region">
+      <div class="container">
+        <h2 id="contact-title">Get In Touch</h2>
+        <span id="contact-desc" class="sr-only">Contact information and message form</span>
+
+        <div class="contact-grid">
+          <article aria-labelledby="contact-info-title" role="complementary">
+            <h3 id="contact-info-title">Contact Information</h3>
+            <address role="contentinfo">
+              New York, NY •
+              <a href="mailto:xiajieou.yc@gmail.com" aria-label="Email address">xiajieou.yc@gmail.com</a>
+            </address>
+            <nav aria-label="Social media profiles" role="navigation">
+              <ul role="list" class="social-links">
+                <li><a href="https://www.linkedin.com/in/xiajieou/" target="_blank" rel="me noopener" aria-label="LinkedIn profile (opens in new tab)">LinkedIn</a></li>
+                <li><a href="https://github.com/penguince" target="_blank" rel="me noopener" aria-label="GitHub profile (opens in new tab)">GitHub</a></li>
+                <li><a href="https://www.x-ou.com/" target="_blank" rel="me noopener" aria-label="Portfolio website (opens in new tab)">Portfolio</a></li>
+              </ul>
+            </nav>
+          </article>
+
+          <article aria-labelledby="contact-form-title" role="form">
+            <h3 id="contact-form-title">Send a Message</h3>
+            <form aria-describedby="contact-hint" novalidate>
+              <p id="contact-hint">All fields are required. I'll get back to you within 24 hours.</p>
+
+              <div class="form-row">
+                <div>
+                  <label for="name">Full Name</label>
+                  <input id="name" name="name" type="text" autocomplete="name" required aria-required="true" />
+                </div>
+
+                <div>
+                  <label for="email">Email Address</label>
+                  <input id="email" name="email" type="email" autocomplete="email" required aria-required="true" />
+                </div>
+              </div>
+
+              <div>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required aria-required="true"
+                          placeholder="Tell me about your project or how I can help..."></textarea>
+              </div>
+
+              <button type="submit" aria-describedby="submit-help">Send Message</button>
+              <p id="submit-help" class="sr-only">Form will be submitted when you click this button</p>
+            </form>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer: year auto-updated by script.js -->
+  <footer role="contentinfo">
+    <div class="container">
+      <p>&copy;  2025 Xia Jie Ou . All rights reserved.</p>
+      <a href="#top" aria-label="Back to top of page">↑ Back to top</a>
+    </div>
+  </footer>
+
+  <!-- Main script: validation, scroll reveal, theme toggle -->
+  <script src="script.js" defer></script>
+</body>
+</html>
